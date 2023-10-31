@@ -17,6 +17,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/currency', function () {
-    return "Hello";
-});
+Route::get('/currency', [\App\Http\Controllers\CurrencyController::class, 'index']);
