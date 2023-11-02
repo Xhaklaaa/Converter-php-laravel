@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
 </head>
-<body class="bg-gray-200 h-screen leading-none font-sans">
+<body class="bg-gray-200 h-screen leading-none font-sans no-scroll">
 @yield('content')
 </body>
 <script src="https://kit.fontawesome.com/95f577aa76.js" crossorigin="anonymous"></script>
