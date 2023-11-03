@@ -7,13 +7,15 @@
             <button onclick="window.location.href = '{{ route('register') }}'"
                     class="bg-red-500 hover:bg-red-300 text-white font-bold py-2 px-4 rounded mr-2">Register
             </button>
-            <button onclick="window.location.href = '{{ route('register') }}'"
+            <button onclick="window.location.href = '{{ route('login') }}'"
                     class="bg-blue-500 hover:bg-blue-300 text-white font-bold py-2 px-4 rounded">Login
             </button>
         </div>
         <h1 class="text-3xl font-bold text-center text-blue-600">
-            <i class="fa-solid fa-money-bill-transfer"></i>
-            Convert
+            <a href="/" class="text-blue-500">
+                <i class="fa-solid fa-money-bill-transfer"></i>
+                Convert
+            </a>
         </h1>
     </div>
     <div class="p-8 mx-auto max-w-md bg-gray-100 rounded-lg bg-gradient-to-b shadow-xl mt-4 ">

@@ -3,7 +3,7 @@
 @section('content')
 
     <div class="bg-gray-100 p-4 flex justify-between items-center mr-1">
-        <button onclick=" window.location.href='{{ route('register') }}'"
+        <button onclick=" window.location.href='{{ route('login') }}'"
                 class="bg-blue-500 hover:bg-blue-300 text-white font-bold py-2 px-4 rounded">Login
         </button>
     </div>
@@ -12,8 +12,10 @@
         <div class="sm:mx-auto sm:w-full sm:max-w-sm">
             <div class="text-center font-bold text-1xl text-blue-600">
                 <h2>
-                    <i class="fa-solid fa-money-bill-transfer"></i>
-                    Convert
+                    <a href="/" class="text-blue-500">
+                        <i class="fa-solid fa-money-bill-transfer"></i>
+                        Convert
+                    </a>
                 </h2>
             </div>
             <h2 class="mt-10 text-center text-2xl py-4 px-5 font-bold leading-9 tracking-tight text-gray-900">Sign up to
@@ -57,7 +59,7 @@
                     <label for="password" class="flex flex-col font-bold w-4/6  text-black">Password</label>
                 </div>
                 <div class="mt-2">
-                    <input id="password" name="password" placeholder="at least  8 symbols"
+                    <input id="password" name="password" placeholder="minimum 8 symbols"
                            type="password"
                            autocomplete="current-password" required
                            class="block w-full px-1.5 rounded-md border-1 py-1.5 text-gray-500 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6">
@@ -70,7 +72,7 @@
                         Password</label>
                 </div>
                 <div class="mt-2">
-                    <input id="password_confirmation" name="password_confirmation" placeholder="at least  8 symbols"
+                    <input id="password_confirmation" name="password_confirmation" placeholder="minimum 8 symbols"
                            type="password"
                            class="block w-full px-1.5 rounded-md border-1 py-1.5 text-gray-500 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6">
                 </div>

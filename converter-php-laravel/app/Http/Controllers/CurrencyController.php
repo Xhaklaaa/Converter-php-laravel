@@ -55,7 +55,7 @@ class CurrencyController extends Controller
         $to_currency = $request->to;
 
         if ($from_currency === $to_currency) {
-            return back()->with('error', 'Исходная и конечная валюты должны отличаться.');
+            return back()->with('conversion', 'The source and destination currencies must be different.');
         }
 
         $currencies = $this->getCurrencyRates();
